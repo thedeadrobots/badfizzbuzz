@@ -1,16 +1,18 @@
-# Write a program that prints the numbers from 1 to 100. 
-# But for multiples of three print "Fizz" instead of the number and for the multiples of five print "Buzz". 
-# For numbers which are multiples of both three and five print "FizzBuzz".
-# hint: lets try with no modulus operator
-
-for n in range(1,101):
-    fizz = (n - 3 * (n // 3))
-    buzz = (n - 5 * (n // 5))
-    
-    if fizz == 0 and buzz == 0:
-        print("FizzBuzz")
-    elif fizz == 0:
-        print("Fizz")
-    elif buzz == 0:
-        print("Buzz")
-
+def fizzbuzz(stop):
+     count_3 = 0 
+     count_5 = 0
+     for i in range(1, stop + 1):
+         count_3 += 1
+         count_5 += 1
+         if count_3 == 3 and count_5 == 5:
+             print('fizzbuzz')
+             count_3 = 0
+             count_5 = 0
+         elif count_3 == 3:
+             print('fizz')
+             count_3 = 0
+         elif count_5 == 5:
+             print('buzz')
+             count_5 = 0
+         else:
+             print(i)
