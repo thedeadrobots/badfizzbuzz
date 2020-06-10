@@ -1,3 +1,11 @@
+#!/usr/bin/env python3
+import sys
+
+# Write a program that prints the numbers from 1 to 100. 
+# But for multiples of three print "Fizz" instead of the number and for the multiples of five print "Buzz". 
+# For numbers which are multiples of both three and five print "FizzBuzz".
+# Lets try with no modulus operator
+
 def fizzbuzz(stop):
      count_3 = 0 
      count_5 = 0
@@ -16,3 +24,5 @@ def fizzbuzz(stop):
              count_5 = 0
          else:
              print(i)
+if __name__ == "__main__":
+    fizzbuzz(int(sys.argv[1]))
