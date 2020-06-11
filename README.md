@@ -2,5 +2,5 @@
 
 ```
 chmod 777 fizzbuzz.py
-./fizzbuzz.py 101
+./fizzbuzz.py 100
 ```
